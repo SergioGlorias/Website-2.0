@@ -34,7 +34,17 @@ export default {
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/stylelint
     '@nuxtjs/stylelint-module',
+    '@nuxtjs/fontawesome',
   ],
+
+  fontawesome: {
+    component: 'fa',
+    suffix: true,
+    icons: {
+      solid: ['faHome','faLink'],
+
+    }
+  },
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [

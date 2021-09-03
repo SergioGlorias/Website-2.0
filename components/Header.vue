@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="fix">
     <b-navbar toggleable="lg" type="dark" variant="especial">
       <b-container fluid="lg">
         <b-navbar-brand href="/">
@@ -16,7 +16,12 @@
         <b-navbar-toggle target="nav-collapse" />
 
         <b-collapse id="nav-collapse" is-nav>
-            
+          <b-navbar-nav class="ml-auto">
+            <b-nav-item href="/"> <fa-icon icon="home"/> Principal</b-nav-item>
+            <b-nav-item href="#"> <fa-icon icon="link"/> Link</b-nav-item>
+            <b-nav-item href="#"> <fa-icon icon="link"/> Link</b-nav-item>
+            <b-nav-item href="#"> <fa-icon icon="link"/> Link</b-nav-item>
+          </b-navbar-nav>
         </b-collapse>
       </b-container>
     </b-navbar>
@@ -27,12 +32,17 @@
 export default {}
 </script>
 
-<style>
+<style scoped>
 .navbar-brand {
   font-family: 'Lobster', cursive;
   font-size: 35px;
 }
 .bg-especial {
-  background: linear-gradient(0.25turn, #4a06a3, #880707);
+  background: linear-gradient(0.375turn, #4a06a3, #880707);
+}
+.fix {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 </style>
